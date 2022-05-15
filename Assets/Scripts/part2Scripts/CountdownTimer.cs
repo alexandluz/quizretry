@@ -340,33 +340,20 @@ public class CountdownTimer : MonoBehaviour
     IEnumerator AfterPockerAnim()
     {
         CloseAllUIExceptBet();
-        currentTime = 5f;
+        currentTime = 10f;
         showbet.AddbetToPot();
-        shownPocketAnimation = true;        
+        shownPocketAnimation = true;
+        showbet.AddbetToPot();
         Debug.Log("Que the flop");
         // cardCanvas.SetActive(false);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
         cardCanvas.SetActive(true);
         PocketCardNumber++;
     }
     IEnumerator AfterTurnAnim()
     {
-       
-        CloseAllUIExceptBet();
-        currentTime = 5f;        
-        shownTurnAnimation = true;
-        showbet.AddbetToPot();
-        showbet.AddedSecondBet();
         Debug.Log("Que the Turn");
-        // cardCanvas.SetActive(false);
-        yield return new WaitForSeconds(5f);
-        cardCanvas.SetActive(true);
-        PocketCardNumber++;
-        shownSeventhCard = true;
-        ReopenUI();
-
-
-        /*
+        
         showbet.AddedSecondBet();
         CloseAllUIExceptBet();       
         currentTime = 5f;
@@ -377,8 +364,7 @@ public class CountdownTimer : MonoBehaviour
         PocketCardNumber++;
         shownSeventhCard = true;
         ReopenUI();
-        */
-    }
+        }
     
     IEnumerator AfterFlopAnim()
     {
