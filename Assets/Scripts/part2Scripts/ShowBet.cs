@@ -18,12 +18,14 @@ public class ShowBet : MonoBehaviour
     public GameObject BankDisplay;
     public GameObject BetDisplay;
     public GameObject PotDisplay;
-    
 
+    public bool hasaddedSecondBet = false;
     public bool hasBetCounted = false;
     public int playerBankroll = 1000;
+    public int bankrollAfterFirstBet;
     public int NewBankroll;
     public bool hasAddedFirstBet = false;
+
 
 
     // Start is called before the first frame update
@@ -49,10 +51,7 @@ public class ShowBet : MonoBehaviour
         if(betInput.text == null)
         {
             Debug.Log("ohno");
-        }
-        //hasBetCounted = true;
-        //playerBet = 0;
-        //BetDisplay.GetComponent<TMP_Text>().text = "CurrentBet: " + playerBet;      
+        }             
     }
     public void ChargeBank()
     {
@@ -83,6 +82,19 @@ public class ShowBet : MonoBehaviour
             playerBet = 0;
             BetDisplay.GetComponent<TMP_Text>().text = "CurrentBet: " + playerBet;
             hasAddedFirstBet = true;
+        }
+    }
+    public void AddedSecondBet()
+    {
+        if (!hasaddedSecondBet)
+        {
+            Debug.Log("added2ndBet");
+            PotAmount = PotAmount + playerBet;
+            PotDisplay.GetComponent<TMP_Text>().text = "Pot Amount: " + PotAmount;
+            playerBankroll -= playerBet = NewBankroll;
+            BankDisplay.GetComponent<TMP_Text>().text = "BankRoll: " + NewBankroll;
+            playerBet = 0;
+            hasaddedSecondBet = true;
         }
     }
 }

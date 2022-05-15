@@ -341,6 +341,7 @@ public class CountdownTimer : MonoBehaviour
     {
         CloseAllUIExceptBet();
         currentTime = 10f;
+        showbet.AddbetToPot();
         shownPocketAnimation = true;
         showbet.AddbetToPot();
         Debug.Log("Que the flop");
@@ -351,8 +352,9 @@ public class CountdownTimer : MonoBehaviour
     }
     IEnumerator AfterTurnAnim()
     {
-        //Debug.Log("Que the Turn");
-        showbet.AddbetToPot();
+        Debug.Log("Que the Turn");
+        
+        showbet.AddedSecondBet();
         CloseAllUIExceptBet();       
         currentTime = 5f;
         cardCanvas.SetActive(false);
