@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4530779058368316817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4530779058368316819}
+  - component: {fileID: 4530779058368316816}
+  - component: {fileID: 4530779058368316818}
+  - component: {fileID: 4530779058368316813}
+  m_Layer: 0
+  m_Name: MasterControll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4530779058368316819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4530779058368316817}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4530779058368316816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4530779058368316817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ddecea77fd364e45b92841f07a245aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenQuestion: {fileID: 0}
+  answerA: {fileID: 0}
+  answerB: {fileID: 0}
+  answerC: {fileID: 0}
+  answerD: {fileID: 0}
+--- !u!114 &4530779058368316818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4530779058368316817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbddb449967071e4b9742ff4ddfa667f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionNumber: 0
+  PocketCardQuestions: 0
+--- !u!114 &4530779058368316813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4530779058368316817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3817fd011e43b14f902e371f0f7f814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionGenerator: {fileID: 0}
+  answerAbackBlue: {fileID: 0}
+  answerAbackGreen: {fileID: 0}
+  answerAbackRed: {fileID: 0}
+  answerBbackBlue: {fileID: 0}
+  answerBbackGreen: {fileID: 0}
+  answerBbackRed: {fileID: 0}
+  answerCbackGreen: {fileID: 0}
+  answerCbackBlue: {fileID: 0}
+  answerCbackRed: {fileID: 0}
+  answerDbackGreen: {fileID: 0}
+  answerDbackBlue: {fileID: 0}
+  answerDbackRed: {fileID: 0}
+  answerA: {fileID: 0}
+  answerb: {fileID: 0}
+  answerc: {fileID: 0}
+  answerd: {fileID: 0}
+  amountcorrectText: {fileID: 0}
+  bankrollText: {fileID: 0}
+  currentBet: 0
+  currentBankRoll: 0
+  potAmount: 0
+  handValue: 0
+  amountCorrect: 0
+  amountlost: 0
